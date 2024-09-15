@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head xmlns="">
+    <title>FAQ</title>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <?php
+    foreach ($faqs as $faq) { ?>
+    <?= $faq['QUESTION']; ?>
+    <p><?= $faq['ANSWER']; ?></p>
+    <?php } ?>
+</body>
