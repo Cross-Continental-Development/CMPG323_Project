@@ -2,8 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subject View</title>
+
 </head>
 <body>
+<header>
+    <h1>Subject View</h1>
+    <nav>
+        <ul>
+            <li><a href="Search.html">Search</a></li>
+            <li><a href="Contributors.html">Contribute</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Search within Subject</h2>
+        <form action="Search.html" method="GET">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="literature">Literature</option>
+            </select>
+
+            <label for="grade">Grade:</label>
+            <select id="grade" name="grade">
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <!-- Add more grade options as needed -->
+            </select>
+
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords">
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Popular Documents in Subject</h2>
+        <ul>
+            <li><a href="FAQ.html">Document 1 - Mathematics Grade 3</a></li>
+            <li><a href="Contributors.html">Document 2 - Science Grade 5</a></li>
+            <li><a href="Home.html">Document 3 - History Grade 7</a></li>
+            <!-- Add more popular document links as needed -->
+        </ul>
+    </section>
+</main>
+
+<footer>
+
+</footer>
 </body>
 </html>
