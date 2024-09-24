@@ -8,8 +8,8 @@ app.use(express.json());
 
 const db = mysql.createConnection({
     host: '102.222.124.17',
-    user: 'xcondea8o1p9_andre',
-    password: 'K9#gxoNOW@Mw',
+    user: 'xcondea8o1p9_admin',
+    password: 'adminshare2teach',
     database: 'xcondea8o1p9_SHARE2TEACH',
 });
 

@@ -8,8 +8,8 @@ app.use(express.json());
 
 const db = mysql.createConnection({
     host: '102.222.124.17',
-    user: 'xcondea8o1p9_andre',
-    password: 'K9#gxoNOW@Mw',
+    user: 'xcondea8o1p9_admin',
+    password: 'adminshare2teach',
     database: 'xcondea8o1p9_SHARE2TEACH',
 });
 
@@ -28,8 +28,8 @@ app.listen(PORT, () => {
 
 // Create a new faq
 app.post('/FAQ', (req, res) => {
-    const { question, answer, created_date, created_by } = req.body;
-    db.query('INSERT INTO FAQ (FAQ.QUESTION, FAQ.ANSWER, FAQ.CREATED_DATE, FAQ.CREATED_BY) VALUES (?, ?,?,?)', [question, answer, created_date, created_by], (err, result) => {
+    const { question, answer} = req.body;
+    db.query('INSERT INTO FAQ (FAQ.QUESTION, FAQ.ANSWER) VALUES (?, ?)', [question, answer], (err, result) => {
         if (err) throw err;
         res.json({ message: 'FAQ created successfully', id: result.insertId });
     });
@@ -55,8 +55,8 @@ app.get('/FAQ', (req, res) => {
 
 // Update faq description
 app.put('/FAQ', (req, res) => {
-    const {question, answer, created_date, created_by  } = req.body;
-    db.query('UPDATE FAQ SET FAQ.QUESTION = ?, FAQ.ANSWER = ? , FAQ.CREATED_DATE = ?, FAQ.CREATED_BY = ? WHERE FAQ.ID = ?',[question, answer, created_date, created_by], (err, results) => {
+    const {question, answer} = req.body;
+    db.query('UPDATE FAQ SET FAQ.QUESTION = ?, FAQ.ANSWER = ? WHERE FAQ.ID = ?',[question, answer], (err, results) => {
         if (err) throw err;
         res.json({ message: 'FAQ updated successfully', id: results.insertId });
     });
