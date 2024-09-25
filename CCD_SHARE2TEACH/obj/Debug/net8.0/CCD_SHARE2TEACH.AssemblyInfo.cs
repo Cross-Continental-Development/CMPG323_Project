@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CCD_SHARE2TEACH")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba8cdd6f957007d52c958f7a379cf75237ee8e97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e30880ebb83183730d5260fec2d8b1ec213908a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CCD_SHARE2TEACH")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CCD_SHARE2TEACH")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
