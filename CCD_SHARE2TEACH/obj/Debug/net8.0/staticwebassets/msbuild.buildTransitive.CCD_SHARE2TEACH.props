@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CCD_SHARE2TEACH.props" />
+</Project>
