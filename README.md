@@ -17,9 +17,9 @@ Share2Teach is a web-based educational platform. It is designed to provide a sha
 ## Technologies Used
 -**Front End**: HTML5 and JavaScript
 -**Back End**: RESTful API
--**Database**: MariaDB
--**File Storage**: Github and 102.222.124.17
--**Security**: OAuth
+-**Database**: MariaDB - Hosted with Afrihost at 102.222.124.17
+-**File Storage**: Nextcloud integrated with domain www.xcondev.com
+-**Security**: OAuth 2.0 for API's and User roles allocation to individual user accounts
 
 ## API Usage
 The platform uses a RESTful API for back end interaction. Examples thereof are:
