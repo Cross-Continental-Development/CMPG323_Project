@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors</title>
+</head>
+<body>
+<header>
+    <h1>Contributors</h1>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Contribute to Share2Teach</h2>
+        <ul>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="file">Select a file:</label>
+                <input type="file" id="file" name="file"><br><br>
+
+                <h3>Tag</h3>
+
+            <!-- Subject Filter -->
+            <label for="subject">Filter by Subject:</label>
+            <select id="subject" name="subject">
+                <option value="">Any Subject</option>
+                <option value="subj1">Subject 1</option>
+                <option value="subj2">Subject 2</option>
+                <option value="subj3">Subject 3</option>
+                <option value="subj4">Subject 4</option>
+            </select>
+
+            <!-- Grade Filter -->
+            <label for="grade">Filter by Grade:</label>
+            <select id="grade" name="grade">
+                <option value="">Any Grade</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+
+            </select>
+
+            <!-- Document Rating Filter -->
+            <label for="rating">Filter by Rating:</label>
+            <select id="rating" name="rating">
+                <option value="">Any Rating</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+
+                <input type="submit" value="Upload">
+              </form>
+
+        </ul>
+    </section>
+</main>
+</body>
+</html>
