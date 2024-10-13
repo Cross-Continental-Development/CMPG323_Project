@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andre\\Desktop\\CMPG323_S2T\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj": {}
+    "C:\\Users\\Eric W\\Desktop\\Git 3\\CMPG323_Project\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andre\\Desktop\\CMPG323_S2T\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj": {
+    "C:\\Users\\Eric W\\Desktop\\Git 3\\CMPG323_Project\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andre\\Desktop\\CMPG323_S2T\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj",
+        "projectUniqueName": "C:\\Users\\Eric W\\Desktop\\Git 3\\CMPG323_Project\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj",
         "projectName": "CCD_SHARE2TEACH",
-        "projectPath": "C:\\Users\\Andre\\Desktop\\CMPG323_S2T\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj",
-        "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andre\\Desktop\\CMPG323_S2T\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH\\obj\\",
+        "projectPath": "C:\\Users\\Eric W\\Desktop\\Git 3\\CMPG323_Project\\CCD_SHARE2TEACH\\CCD_SHARE2TEACH.csproj",
+        "packagesPath": "C:\\Users\\Eric W\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eric W\\Desktop\\Git 3\\CMPG323_Project\\CCD_SHARE2TEACH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eric W\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -40,6 +41,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -88,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
