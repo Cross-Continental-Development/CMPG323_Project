@@ -5,60 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subject View</title>
     <link rel="stylesheet" href="CSS/subjectview.css">
+    <style>
+        /* Change colour of the main header */
+        h1 {
+            color: white;
+        }
 
+        /* Add space above the "Popular Documents in Subject" heading */
+        h2 {
+            margin-top: 20px; /* Adjust the value to increase or decrease the space */
+        }
+
+        /* Basic styling for the nav bar */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+    </style>
 </head>
 <body>
-<header>
-    <h1>Subject View</h1>
-    <nav>
-        <ul>
-            <li><a href="Search.html">Search</a></li>
-            <li><a href="Contribute.html">Contribute</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Subject View</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li> 
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <section>
-        <h2>Search within Subject</h2>
-        <form action="Search.html" method="GET">
-            <label for="subject">Subject:</label>
-            <select id="subject" name="subject">
-                <option value="Subject1">Subject1</option>
-                <option value="Subject2">Subject2</option>
-                <option value="Subject3">Subject3</option>
-                <option value="Subject4">Subject4</option>
-            </select>
+    <main>
+        <section>
+            <h2>Search within Subject</h2>
+            <form action="Search.html" method="GET">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="Subject1">English</option>
+                    <option value="Subject2">Mathematics</option>
+                    <option value="Subject3">Music</option>
+                    <option value="Subject4">Geography</option>
+                    <option value="Subject5">Physics</option>
+                    <option value="Subject6">Chemistry</option>
+                    <option value="Subject7">Technology</option>
+                    <option value="Subject8">Philosophy</option>
+                    <option value="Subject9">Biology</option>
+                    <option value="Subject10">Thats What She Said</option>
+                </select>
 
-            <label for="grade">Grade:</label>
-            <select id="grade" name="grade">
-                <option value="1">Grade 1</option>
-                <option value="2">Grade 2</option>
-                <option value="3">Grade 3</option>
+                <label for="grade">Level of Complexity:</label>
+                <select id="grade" name="grade">
+                    <option value="Level 1">Introductory</option>
+                    <option value="Level 2">Novice</option>
+                    <option value="Level 3">Intermediate</option>
+                    <option value="Level 4">Proficient</option>
+                    <option value="Level 5">Advanced</option>
+                    <option value="Level 6">Master</option>
+                    <option value="Level 7">Super Guru Know It All</option>
+                </select>
 
-            </select>
+                <label for="keywords">Keywords:</label>
+                <input type="text" id="keywords" name="keywords" placeholder="Enter keywords">
 
-            <label for="keywords">Keywords:</label>
-            <input type="text" id="keywords" name="keywords" placeholder="Enter keywords">
+                <button type="submit">Search</button>
+            </form>
+        </section>
 
-            <button type="submit">Search</button>
-        </form>
-    </section>
+        <section>
+            <!-- Added space above this heading using CSS -->
+            <h2>Popular Documents in Subject</h2>
+            <ul>
+                <li><a href="https://www.nova.edu/tutoring-testing/study-resources/forms/study-skills-guide.pdf">Mathematics Study Skills Guide</a></li>
+                <li><a href="https://digital.nls.uk/dcn6/7864/78641945.6.pdf">A Complete Dictionary of the English Language</a></li>
+                <li><a href="https://www.rcboe.org/cms/lib/GA01903614/Centricity/Domain/1224/Music%20in%20Theory%20and%20Practice.pdf.pdf">Music in Theory and Practice Volume 1</a></li>
+                <li><a href="https://dspace.lib.hawaii.edu/server/api/core/bitstreams/43462c9a-01c2-4c2a-ac3b-572d33728ee9/content">Concepts of Biology</a></li>
+                <li><a href="https://www.scribd.com/document/667204079/thats-what-she-said">Thats What She Said</a></li>
+                <li><a href="https://fji.oer4pacific.org/id/eprint/118/1/Philosophy%20of%20Education.pdf">Philosophy of Education</a></li>
+                <li><a href="https://mazams.weebly.com/uploads/4/8/2/6/48260335/advanced_organic_chemistry.pdf">Advanced Organic Chemistry</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <section>
-        <h2>Popular Documents in Subject</h2>
-        <ul>
-            <li><a href="doc1.html">Document 1</a></li>
-            <li><a href="doc2.html">Document 2</a></li>
-            <li><a href="doc3.html">Document 3</a></li>
-
-        </ul>
-    </section>
-</main>
-
-<footer>
-
-</footer>
+    <footer>
+    </footer>
 </body>
 </html>
