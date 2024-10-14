@@ -6,7 +6,7 @@
     <title>Contributors</title>
     <link rel="stylesheet" href="CSS/subjectview.css">
     <style>
-        /* Change colour of the main header */
+        /* Change color of the main header */
         h1 {
             color: white;
         }
@@ -26,6 +26,25 @@
                 display: inline;
                 margin-right: 10px;
             }
+
+        /* Styling for the contributors list */
+        .contributors-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .contributors-list li {
+                margin-bottom: 10px;
+            }
+
+            .contributors-list a {
+                text-decoration: none;
+                color: #007BFF; /* Link color */
+            }
+
+                .contributors-list a:hover {
+                    text-decoration: underline;
+                }
     </style>
 </head>
 <body>
@@ -45,8 +64,11 @@
     <main>
         <section>
             <h2>Learning of Contributors</h2>
-            <ul>
-                <!-- Add contributors' information here -->
+            <ul class="contributors-list">
+                <li><a href="https://za.linkedin.com/in/andre-croucamp-92384994">Andre Croukamp</a></li>
+                <li><a href="https://au.linkedin.com/in/marden%C3%A9-de-villiers?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F">Mardene de Villiers</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Eric_Wood">Eric Wood</a></li>
+                <li><a href="https://za.linkedin.com/in/waldo-smit-b2557670">Waldo Smit</a></li>
             </ul>
         </section>
     </main>
