@@ -1,28 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Other useful OERs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Share2Teach</title>
+    <link rel="stylesheet" href="CSS/home.css"> 
+    <style>
+        
+        .faq-item {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+            .faq-item button {
+                width: 100%;
+                text-align: left;
+                cursor: pointer;
+                font-size: 16px;
+                border: none;
+            }
+
+            .faq-item .answer {
+                display: none;
+                margin-top: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
-    <!-- Header Section -->
+
+    <!-- Header -->
     <header>
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="SelfDirectedLearning.html">Self-Directed Learning</a></li>
+                <li><a href="subjectview.html">Subjects</a></li>
+                <li><a href="useful_oer.html">Useful OER</a></li>
+                <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="useful_oer.html">Other useful OERs</a></li>
-                <li><a href="about_us.html">About Us</a></li>>
-                <li><a href="Search.html">Search Resources</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="add_document.html">Add Document</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Welcome to FAQ</h1>
+    <main>
+        <section class="hero">
+            <h1>Frequently Asked Questions (FAQ)</h1>
+            <p>Most commonly asked questions on SHARE2TEACH</p>
+        </section>
 
-    <p></p>
+        <section class="faq-section">
+            <h2>Questions</h2>
 
-    <p></p>
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer1')">What is Share2Teach?</button>
+                <div id="answer1" class="answer">
+                    <p>Share2Teach is an open educational resource</p>
+                </div>
+            </div>
 
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer2')">How can I upload a document?</button>
+                <div id="answer2" class="answer">
+                    <p>You can upload a document that will be moderated before published on site</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer3')">Who can access the resources?</button>
+                <div id="answer3" class="answer">
+                    <p>All resources on Share2Teach are open and accessible to anyone looking for educational material for free</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer4')">Is there a moderation process for uploaded content?</button>
+                <div id="answer4" class="answer">
+                    <p>All documents uploaded by users must be moderated before it is published.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <button onclick="toggleAnswer('answer5')">How can I become a contributor?</button>
+                <div id="answer5" class="answer">
+                    <p>You can become a contributor by creating an account and submitting educational resources.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 </html>
