@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moderate Documents - Share2Teach</title>
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/moderate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
@@ -22,19 +23,21 @@
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="add_document.html">Add Document</a></li>
-                <li><a href="Moderate.html">Add Document</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <section class="hero">
-            <h1>Moderate Documents</h1>
+            <h1><i class="fas fa-check-circle"></i> Moderate Documents</h1>
             <p>Files uploaded by users for moderation. Review, provide feedback, and rate accordingly.</p>
         </section>
 
         <section class="moderation-section">
-            <h2>Files to Moderate</h2>
+            <h2><i class="fas fa-file-alt"></i> Files to Moderate</h2>
 
             <div class="file-list">
                 <!-- files -->
@@ -54,11 +57,11 @@
 
             <div class="moderation-controls">
                 <!-- Moderator feedback -->
-                <label for="moderation-feedback">Feedback:</label>
+                <label for="moderation-feedback"><i class="fas fa-comment-dots"></i> Feedback:</label>
                 <textarea id="moderation-feedback" placeholder="Enter your feedback for the selected documents"></textarea>
 
                 <!-- Rating -->
-                <label for="rating">Document Rating:</label>
+                <label for="rating"><i class="fas fa-star"></i> Document Rating:</label>
                 <select id="rating" name="rating">
                     <option value="1 Star">1 Star</option>
                     <option value="2 Stars">2 Stars</option>
@@ -68,11 +71,12 @@
                 </select>
 
                 <!-- Submit -->
-                <button type="submit">Submit Review and Rating</button>
+                <button type="submit" class="submit-button">Submit Review and Rating <i class="fas fa-paper-plane"></i></button>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Share2Teach. All rights reserved.</p>
         <nav>

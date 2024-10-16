@@ -9,7 +9,7 @@ body, h1, h2, p, a, ul, li, nav, header, footer, main, section, div {
 body {
     line-height: 1.6;
     color: #333;
-    background: url('CSS/img/homebackimg.jpg') no-repeat center center/cover;
+    background-color: #134457;
 }
 
 /* Header Navigation */
@@ -61,39 +61,97 @@ nav ul li a:hover {
 
 /* Search Section */
 .search-section {
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 50px 30px; /* Increased padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 50px auto;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Search Input */
 .search-bar {
-    width: 100%;
+    width: 90%; /* Reduced width so it doesn't touch the container edges */
+    max-width: 500px; /* Set a maximum width to avoid too wide inputs */
     padding: 15px;
     font-size: 1em;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Search Button */
 .search-button {
-    text-decoration: none;
     background-color: #134457;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 30px;
     border-radius: 5px;
     font-size: 1em;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .search-button:hover {
     background-color: #4682b4;
+    transform: translateY(-2px);
 }
+
+/* Styling for the filter section */
+.filter-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    padding: 30px 20px; /* Increased padding for better spacing */
+    margin: 40px auto;
+    max-width: 800px; /* To ensure it doesn't span the entire page width */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+.filter-section h2 {
+    font-size: 1.8em;
+    color: #134457; /* Darker text for visibility */
+    margin-bottom: 20px;
+}
+
+.filter-section label {
+    font-size: 1em;
+    color: #333; /* Make labels more visible */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filter-section select,
+.filter-section button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 1em;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section select {
+    background-color: #fff; /* Background color for selects */
+}
+
+.filter-section button {
+    background-color: #134457;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.filter-section button:hover {
+    background-color: #4682b4;
+    transform: translateY(-2px);
+}
+
+
 
 /* Footer Section */
 footer {

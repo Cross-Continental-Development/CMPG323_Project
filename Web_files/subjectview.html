@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subject View - Share2Teach</title>
-    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/subjectview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Subject View</h1>
         <nav>
             <ul>
                 <li><a href="Home.html">Home</a></li>
@@ -23,17 +23,24 @@
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="add_document.html">Add Document</a></li>
-                <li><a href="Moderate.html">Add Document</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Subjects Overview</h1>
+        <p>Explore various subjects and resources curated by our contributors.</p>
+        <a href="Search.html" class="cta-button">Explore Subjects</a>
+    </section>
+
+    <!-- Subject Search Section -->
     <main>
-        <section>
+        <section class="subjects">
             <h2>Search within Subject</h2>
             <form action="Search.html" method="GET">
-                <!-- Filter Subject -->
                 <label for="subject">Subject:</label>
                 <select id="subject" name="subject">
                     <option value="Subject1">English</option>
@@ -48,7 +55,6 @@
                     <option value="Subject10">That's What She Said</option>
                 </select>
 
-                <!-- Filter Complexity -->
                 <label for="grade">Level of Complexity:</label>
                 <select id="grade" name="grade">
                     <option value="Level 1">Introductory</option>
@@ -60,33 +66,59 @@
                     <option value="Level 7">Super Guru Know It All</option>
                 </select>
 
-                <!-- Search Keywords -->
                 <label for="keywords">Keywords:</label>
                 <input type="text" id="keywords" name="keywords" placeholder="Enter keywords">
 
-                <!-- Search Button -->
                 <button type="submit">Search</button>
             </form>
         </section>
 
-        <!-- Popular Documents -->
-        <section>
+        <!-- Popular Documents Section -->
+        <section class="popular-documents">
             <h2>Popular Documents</h2>
-            <ul>
-                <li><a href="https://www.nova.edu/tutoring-testing/study-resources/forms/study-skills-guide.pdf">Mathematics Study Skills Guide</a></li>
-                <li><a href="https://digital.nls.uk/dcn6/7864/78641945.6.pdf">A Complete Dictionary of the English Language</a></li>
-                <li><a href="https://www.rcboe.org/cms/lib/GA01903614/Centricity/Domain/1224/Music%20in%20Theory%20and%20Practice.pdf.pdf">Music in Theory and Practice Volume 1</a></li>
-                <li><a href="https://dspace.lib.hawaii.edu/server/api/core/bitstreams/43462c9a-01c2-4c2a-ac3b-572d33728ee9/content">Concepts of Biology</a></li>
-                <li><a href="https://www.scribd.com/document/667204079/thats-what-she-said">That's What She Said</a></li>
-                <li><a href="https://fji.oer4pacific.org/id/eprint/118/1/Philosophy%20of%20Education.pdf">Philosophy of Education</a></li>
-                <li><a href="https://mazams.weebly.com/uploads/4/8/2/6/48260335/advanced_organic_chemistry.pdf">Advanced Organic Chemistry</a></li>
-            </ul>
+            <div class="document-grid">
+                <div class="document-card">
+                    <i class="fas fa-book"></i>
+                    <a href="https://www.nova.edu/tutoring-testing/study-resources/forms/study-skills-guide.pdf">Mathematics Study Skills Guide</a>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-file-alt"></i>
+                    <a href="https://digital.nls.uk/dcn6/7864/78641945.6.pdf">A Complete Dictionary of the English Language</a>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-music"></i>
+                    <a href="https://www.rcboe.org/cms/lib/GA01903614/Centricity/Domain/1224/Music%20in%20Theory%20and%20Practice.pdf.pdf">Music in Theory and Practice Volume 1</a>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-leaf"></i>
+                    <a href="https://dspace.lib.hawaii.edu/server/api/core/bitstreams/43462c9a-01c2-4c2a-ac3b-572d33728ee9/content">Concepts of Biology</a>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-quote-right"></i>
+                    <a href="https://www.scribd.com/document/667204079/thats-what-she-said">That's What She Said</a>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-book-open"></i>
+                    <a href="https://fji.oer4pacific.org/id/eprint/118/1/Philosophy%20of%20Education.pdf">Philosophy of Education</a>
+                </div>
+                <div class="document-card">
+                    <i class="fas fa-flask"></i>
+                    <a href="https://mazams.weebly.com/uploads/4/8/2/6/48260335/advanced_organic_chemistry.pdf">Advanced Organic Chemistry</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
     </footer>
 
 </body>

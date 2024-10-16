@@ -4,39 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequently Asked Questions - Share2Teach</title>
-    <link rel="stylesheet" href="CSS/home.css"> 
-    <style>
-        
-        .faq-item {
-            margin-bottom: 10px;
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-
-            .faq-item button {
-                width: 100%;
-                text-align: left;
-                cursor: pointer;
-                font-size: 16px;
-                border: none;
-            }
-
-            .faq-item .answer {
-                display: none;
-                margin-top: 10px;
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid #ccc;
-            }
-    </style>
+    <link rel="stylesheet" href="CSS/FAQ.css">
     <script>
         function toggleAnswer(id) {
-            var answer = document.getElementById(id);
-            if (answer.style.display === "none" || answer.style.display === "") {
-                answer.style.display = "block";
-            } else {
-                answer.style.display = "none";
-            }
+            var answer = document.getElementById(id).parentNode;
+            answer.classList.toggle("active");
         }
     </script>
 </head>
@@ -56,11 +28,13 @@
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="add_document.html">Add Document</a></li>
-                <li><a href="Moderate.html">Add Document</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main Section -->
     <main>
         <section class="hero">
             <h1>Frequently Asked Questions (FAQ)</h1>
@@ -113,6 +87,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Share2Teach. All rights reserved.</p>
         <nav>

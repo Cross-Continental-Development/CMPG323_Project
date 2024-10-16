@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management - Share2Teach</title>
+    <link rel="stylesheet" href="CSS/UserManagement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="SelfDirectedLearning.html">Self-Directed Learning</a></li>
+                <li><a href="subjectview.html">Subjects</a></li>
+                <li><a href="useful_oer.html">Useful OER</a></li>
+                <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="user-management">
+            <h1><i class="fas fa-users-cog"></i> User Management</h1>
+
+            <!-- Search User Section -->
+            <input type="text" id="user-search" placeholder="Search users...">
+
+            <!-- Add User Section -->
+            <button class="search-user-button"><i class="fas fa-user-plus"></i> Search User</button>
+                      
+            <!-- User List Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-user"></i> Username</th>
+                        <th><i class="fas fa-envelope"></i> Email</th>
+                        <th><i class="fas fa-user-tag"></i> Role</th>
+                        <th><i class="fas fa-tools"></i> Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@gmail.com</td>
+                        <td>Admin</td>
+                        <td>
+                            <button class="action-button edit"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="action-button delete"><i class="fas fa-trash"></i> Delete</button>
+                            <a href="PasswordReset.html" class="action-button reset"><i class="fas fa-key"></i> Reset Password</a>
+                        </td>
+                    </tr>
+                    <!-- Add more users here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 </html>

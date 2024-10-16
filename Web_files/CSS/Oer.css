@@ -43,116 +43,84 @@ nav ul li a:hover {
 .hero {
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    font-family: 'Lucida Console', Monaco, monospace;
 }
 
 .hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-.cta-button {
-    text-decoration: none;
-    background-color: #87ceeb;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #d2dee8;
-}
-
-/* Popular Documents */
-.popular-documents {
-    text-align: center;
+/* OER List Section */
+.oer-list {
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.popular-documents h2 {
-    font-size: 2em;
+.oer-list h2 {
     margin-bottom: 30px;
-    color: #134457;
+    font-size: 2em;
+    color: #333;
 }
 
-.document-grid {
+/* OER Container */
+.oer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
 }
 
-.document-card {
-    background-color: #f0f8ff;
-    border-radius: 10px;
+.oer-item {
+    background-color: rgba(240, 248, 255, 0.9); /* Light blue background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
     padding: 20px;
-    width: 220px;
+    margin: 15px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.document-card:hover {
+.oer-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.document-card i {
-    font-size: 2em;
+/* OER Icon */
+.oer-icon {
+    font-size: 40px; /* Adjust the size of the Font Awesome icons */
     margin-bottom: 10px;
-    color: #134457;
+    color: #134457; /* You can change the color to match your design */
 }
 
-.document-card a {
+.oer-item a {
     text-decoration: none;
     color: #134457;
-    font-size: 1.1em;
     font-weight: bold;
-    display: block;
-    margin-top: 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
 }
 
-.document-card a:hover {
+.oer-item a:hover {
     color: #4682b4;
 }
 
-/* Subjects Section */
-.subjects {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: relative;
-}
-
-.subject {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    margin: 10px;
-    width: calc(33.333% - 40px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform
-}
-
-/* Footer Section */
+/* Footer */
 footer {
     background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    margin-top: 20px;
 }
 
 footer nav ul {
@@ -160,6 +128,7 @@ footer nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 footer nav ul li {

@@ -1,0 +1,156 @@
+/* General reset and styling */
+body, h1, h2, p, a, ul, li, nav, header, footer, main, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #134457;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b0e0e6;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #134457;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.faq-item button {
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: #134457;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-item button:hover {
+    background-color: #f5f5f5;
+    color: #4682b4;
+}
+
+/* Motion effect for FAQ answers */
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 1em;
+}
+
+/* When active (visible), the answer section will have max-height and full opacity */
+.faq-item.active .answer {
+    max-height: 200px; /* Adjust this value based on content */
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #b0e0e6;
+}

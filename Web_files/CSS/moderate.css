@@ -1,0 +1,171 @@
+/* General reset and styling */
+body, h1, h2, p, a, ul, li, nav, header, footer, main, section, div, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #134457;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b0e0e6;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 40px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Moderation Section */
+.moderation-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moderation-section h2 {
+    font-size: 2em;
+    color: #134457;
+    margin-bottom: 20px;
+}
+
+.file-list {
+    margin-bottom: 30px;
+}
+
+.file-list label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.moderation-controls {
+    text-align: left;
+}
+
+.moderation-controls label {
+    display: block;
+    font-size: 1.1em;
+    color: #134457;
+    margin-bottom: 10px;
+}
+
+.moderation-controls textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.moderation-controls select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #134457;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #4682b4;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.submit-button i {
+    margin-left: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #b0e0e6;
+}

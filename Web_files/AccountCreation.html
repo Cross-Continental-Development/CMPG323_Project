@@ -2,26 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account Creation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation - Share2Teach</title>
+    <link rel="stylesheet" href="CSS/accountCreation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Please enter the following details to create a new account</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="SelfDirectedLearning.html">Self-Directed Learning</a></li>
+                <li><a href="subjectview.html">Subjects</a></li>
+                <li><a href="useful_oer.html">Useful OER</a></li>
+                <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="add_document.html">Add Document</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
     </header>
-    <form>
-        <label for="uname">Username:</label>
-        <input type="text" id="uname" name="uname"><br><br>
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email"><br><br>
+    <!-- Main Section -->
+    <main>
+        <section class="account-creation-container">
+            <h2><i class="fas fa-user-plus"></i> Create a New Account</h2>
+            <form id="accountCreationForm">
+                <div class="input-container">
+                    <label for="uname"><i class="fas fa-user"></i> Username:</label>
+                    <input type="text" id="uname" name="uname" required>
+                </div>
+                <div class="input-container">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-container">
+                    <label for="con_password"><i class="fas fa-lock"></i> Confirm Password:</label>
+                    <input type="password" id="con_password" name="con_password" required>
+                </div>
+                <button type="submit" class="submit-button">Submit <i class="fas fa-check"></i></button>
+            </form>
+        </section>
+    </main>
 
-        <label for="password">Enter Password</label>
-        <input type="password" id="password" name="password"><br><br>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
 
-        <label for="con_password">Confirm Password</label>
-        <input type="password" id="con_password" name="con_password"><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
 </body>
 </html>
