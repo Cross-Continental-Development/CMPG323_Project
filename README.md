@@ -205,6 +205,24 @@ https://github.com/Cross-Continental-Development/CMPG323_Project
 -** Start backend Server via the command
 -	npm start
 
+## Frontend Overview  
+The frontend is designed to deliver a user-friendly and responsive interface, styled using `CSS/home.css`. 
+
+### Key Pages:  
+- **Home Page (`index.html`)**: Provides an overview of the platform and quick links to various sections.  
+- **User Authentication Pages (`login.html`, `register.html`)**: Enables user login, registration, and password recovery.  
+- **Dashboard (`dashboard.html`)**: Displays dynamic content and statistics from the backend.  
+- **Moderation Panel**: Allows moderators to review and approve or reject documents.  
+- **Upload Page**: Enables users to upload and tag educational documents.
+
+### CSS Styling:  
+- **Path**:`CSS/home.css`  
+- **Description**: Provides consistent styling across all pages, with responsive design for different screen sizes. The stylesheet covers:  
+  - Layout and spacing  
+  - Typography and color schemes  
+  - Button and input field styles  
+  - Form validation indicators  
+
 ## Licence
 -** The project is licenced under CC BY-NC-ND 4.0. A copy of the licence can be viewed at https://creativecommons.org/licenses/by-nc-nd/4.0/
 
