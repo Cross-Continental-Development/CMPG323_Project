@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search - Share2Teach</title>
-    <link rel="stylesheet" href="CSS/search.css">
+    <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <nav>
             <ul>
@@ -16,13 +18,16 @@
                 <li><a href="subjectview.html">Subjects</a></li>
                 <li><a href="useful_oer.html">Useful OER</a></li>
                 <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="add_document.html">Add Document</a></li>
+                <li><a href="Moderate.html">Add Document</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main -->
     <main>
         <section class="hero">
             <h1>Search for Educational Resources</h1>
@@ -33,8 +38,53 @@
             <input type="text" class="search-bar" placeholder="Enter a keyword to search..." />
             <button class="search-button">Search</button>
         </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <h2>Filter Results</h2>
+
+            <!-- Filter Subject -->
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="Subject 1">English</option>
+                <option value="Subject 2">Mathematics</option>
+                <option value="Subject 3">Music</option>
+                <option value="Subject 4">Geography</option>
+                <option value="Subject 5">Physics</option>
+                <option value="Subject 6">Chemistry</option>
+                <option value="Subject 7">Technology</option>
+                <option value="Subject 8">Philosophy</option>
+                <option value="Subject 9">Biology</option>
+                <option value="Subject 10">That's What She Said</option>
+            </select>
+
+            <!-- Filter Complexity -->
+            <label for="complexity">Level of Complexity:</label>
+            <select id="complexity" name="complexity">
+                <option value="Level 1">Introductory</option>
+                <option value="Level 2">Novice</option>
+                <option value="Level 3">Intermediate</option>
+                <option value="Level 4">Proficient</option>
+                <option value="Level 5">Advanced</option>
+                <option value="Level 6">Master</option>
+                <option value="Level 7">Super Guru Know It All</option>
+            </select>
+
+            <!-- Filter Rating -->
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="1 Star">1 Star</option>
+                <option value="2 Stars">2 Stars</option>
+                <option value="3 Stars">3 Stars</option>
+                <option value="4 Stars">4 Stars</option>
+                <option value="5 Stars">5 Stars</option>
+            </select>
+
+            <button type="submit">Apply Filters</button>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Share2Teach. All rights reserved.</p>
         <nav>
@@ -45,5 +95,6 @@
             </ul>
         </nav>
     </footer>
+
 </body>
 </html>

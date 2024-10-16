@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Moderate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderate Documents - Share2Teach</title>
+    <link rel="stylesheet" href="CSS/home.css">
 </head>
 <body>
-    <h1>Please select file</h1>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="SelfDirectedLearning.html">Self-Directed Learning</a></li>
+                <li><a href="subjectview.html">Subjects</a></li>
+                <li><a href="useful_oer.html">Useful OER</a></li>
+                <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="add_document.html">Add Document</a></li>
+                <li><a href="Moderate.html">Add Document</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Moderate Documents</h1>
+            <p>Files uploaded by users for moderation. Review, provide feedback, and rate accordingly.</p>
+        </section>
+
+        <section class="moderation-section">
+            <h2>Files to Moderate</h2>
+
+            <div class="file-list">
+                <!-- files -->
+                <label>
+                    <input type="checkbox" name="file1" value="file1"> The findings of Huckle Berry Fin
+                </label>
+                <label>
+                    <input type="checkbox" name="file2" value="file2"> How to review the impact of social media on adults
+                </label>
+                <label>
+                    <input type="checkbox" name="file3" value="file3"> Finding maths answers
+                </label>
+                <label>
+                    <input type="checkbox" name="file4" value="file4"> Biology of the fish
+                </label>
+            </div>
+
+            <div class="moderation-controls">
+                <!-- Moderator feedback -->
+                <label for="moderation-feedback">Feedback:</label>
+                <textarea id="moderation-feedback" placeholder="Enter your feedback for the selected documents"></textarea>
+
+                <!-- Rating -->
+                <label for="rating">Document Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="1 Star">1 Star</option>
+                    <option value="2 Stars">2 Stars</option>
+                    <option value="3 Stars">3 Stars</option>
+                    <option value="4 Stars">4 Stars</option>
+                    <option value="5 Stars">5 Stars</option>
+                </select>
+
+                <!-- Submit -->
+                <button type="submit">Submit Review and Rating</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
 </body>
 </html>
