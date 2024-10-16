@@ -104,13 +104,14 @@ h2 {
     color: #4682b4;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    margin-top: auto;
+    width: 100%;
 }
 
 footer nav ul {
@@ -118,15 +119,32 @@ footer nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 footer nav ul li {
     margin: 0 10px;
 }
 
-footer nav ul li a {
-    text-decoration: none;
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
     color: #fff;
-    transition: color 0.3s;
+    background-color: #134457;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
+}
+
+.footer-button:hover {
+    color: #fff;
+    background-color: #4682b4;
+    box-shadow: 0 0 20px rgba(70, 130, 180, 0.7), 0 0 30px rgba(70, 130, 180, 0.5);
+}
+
+.footer-button:focus {
+    outline: none;
+    box-shadow: 0 0 25px rgba(70, 130, 180, 0.8), 0 0 35px rgba(70, 130, 180, 0.6);
 }

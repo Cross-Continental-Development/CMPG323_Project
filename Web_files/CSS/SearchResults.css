@@ -8,7 +8,7 @@ body, h1, h2, p, a, ul, li, nav, header, footer, main, section, div {
 
 body {
     line-height: 1.6;
-    color: #333;    
+    color: #333;
     background-color: #134457;
 }
 
@@ -39,106 +39,63 @@ nav ul li a:hover {
     color: #b0e0e6;
 }
 
-/* Hero Section */
-.hero {
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-family: 'Lucida Console', Monaco, monospace;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.cta-button {
-    text-decoration: none;
-    background-color: #87ceeb;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #4682b4;
-}
-
-/* Learning Paths Section */
-.learning-paths {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Results Section */
+.results-section {
     padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: relative;
-}
-
-.learning-path {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    margin: 10px;
-    width: calc(33.333% - 40px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s;
-}
-
-.learning-path img.learning-path-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.95; /* Makes the image more transparent */
-}
-
-.learning-path-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    background: rgba(0, 0, 0, 0.7); /* Dark background for readability */
-    color: #fff;
-    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.learning-path h2 {
-    font-size: 1.5em;
+.results-section h1 {
+    color: #134457;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Result Card */
+.result-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.result-card h3 {
+    color: #134457;
     margin-bottom: 10px;
 }
 
-.learning-path p {
+.result-card p {
+    color: #333;
     margin-bottom: 15px;
 }
 
-.learning-path a {
+.result-link {
     text-decoration: none;
     color: #87ceeb;
-    border-bottom: 2px solid #87ceeb;
-    transition: color 0.3s;
+    font-weight: bold;
 }
 
-.learning-path a:hover {
+.result-link:hover {
     color: #4682b4;
 }
 
-.learning-path:hover {
+.result-card:hover {
     transform: translateY(-5px);
-}
-
-.learning-path-icon {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #87ceeb;
 }
 
 /* Footer Section */
@@ -184,4 +141,19 @@ footer nav ul li {
 .footer-button:focus {
     outline: none;
     box-shadow: 0 0 25px rgba(70, 130, 180, 0.8), 0 0 35px rgba(70, 130, 180, 0.6);
+}
+
+/* Ensures footer stays at the bottom when there's less content */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }

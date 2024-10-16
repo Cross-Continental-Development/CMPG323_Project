@@ -2,9 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Share2Teach</title>
+    <link rel="stylesheet" href="CSS/analytics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="SelfDirectedLearning.html">Self-Directed Learning</a></li>
+                <li><a href="subjectview.html">Subjects</a></li>
+                <li><a href="useful_oer.html">Useful OER</a></li>
+                <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Analytics.html">Analytics</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="analytics-section">
+            <h1><i class="fas fa-chart-bar"></i> Analytics Dashboard</h1>
+            <div id="data-grid-container">
+                <table id="data-grid">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data Type</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be dynamically populated using API call -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html" class="footer-button">About Us</a></li>
+                <li><a href="Home.html" class="footer-button">Back to Home</a></li>
+                <li><a href="account.html" class="footer-button">Accounts</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        // JavaScript to fetch data from an API and populate the table
+        $(document).ready(function(){
+            function fetchData() {
+                $.ajax({
+                    url: 'https://api.example.com/data', // Replace with your API URL
+                    method: 'GET',
+                    success: function(data) {
+                        let rows = '';
+                        data.forEach(item => {
+                            rows += `<tr>
+                                        <td>${item.id}</td>
+                                        <td>${item.type}</td>
+                                        <td>${item.value}</td>
+                                     </tr>`;
+                        });
+                        $('#data-grid tbody').html(rows);
+                    },
+                    error: function(err) {
+                        console.error('Error fetching data:', err);
+                    }
+                });
+            }
+
+            fetchData(); // Call the function to fetch and populate data
+        });
+    </script>
 
 </body>
 </html>
