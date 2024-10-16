@@ -40,7 +40,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Data Type</th>
-                            <th>Value</th>
+                            <th>Created Date</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -68,15 +68,15 @@
         $(document).ready(function(){
             function fetchData() {
                 $.ajax({
-                    url: 'https://api.example.com/data', // Replace with your API URL
+                    url: 'https://ccdshare2teachapi.azure-api.net/ANALYTICS', // Replace with your API URL
                     method: 'GET',
                     success: function(data) {
                         let rows = '';
                         data.forEach(item => {
                             rows += `<tr>
                                         <td>${item.id}</td>
-                                        <td>${item.type}</td>
-                                        <td>${item.value}</td>
+                                        <td>${item.metric}</td>
+                                        <td>${item.createddate}</td>
                                      </tr>`;
                         });
                         $('#data-grid tbody').html(rows);
