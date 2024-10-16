@@ -1,25 +1,32 @@
 /* General reset and styling */
-body, h1, h2, p, a, ul, li, nav, header, footer, main, section, div, form {
+body, h1, h2, p, a, ul, li, nav, header, footer, main, section, div, table, tr, td, th {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #134457;;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+html, body {
+    height: 100%;
 }
 
-/* Header and Navigation Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    color: #333;
+    background-color: #134457;
+}
+
+/* Flex container for the main content and footer */
+main {
+    flex: 1;
+}
+
+/* Header Navigation */
 header {
     background-color: rgba(51, 51, 51, 0.8);
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
@@ -27,7 +34,6 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
 }
 
 nav ul li {
@@ -44,71 +50,87 @@ nav ul li a:hover {
     color: #b0e0e6;
 }
 
-/* Login Container Styling */
-.login-container {
-    background-color: #fff;
-    padding: 40px;
+/* Analytics Section */
+.analytics-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 80px auto;
     text-align: center;
 }
 
-.login-container h2 {
+.analytics-section h1 {
     font-size: 2.5em;
     color: #134457;
     margin-bottom: 30px;
 }
 
-.input-container {
-    margin-bottom: 20px;
-    text-align: left;
+#data-grid-container {
+    overflow-x: auto;
+    margin: 20px 0;
 }
 
-.input-container label {
-    font-size: 1.1em;
-    color: #134457;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.input-container input {
+#data-grid {
     width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border-color 0.3s;
+    border-collapse: collapse;
 }
 
-.input-container input:focus {
-    border-color: #4682b4;
-    outline: none;
-    box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
-}
-
-/* Login Button Styling */
-.login-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
+#data-grid thead {
     background-color: #134457;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.login-button:hover {
-    background-color: #4682b4;
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+#data-grid th, #data-grid td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.login-button i {
-    margin-left: 10px;
+#data-grid tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#data-grid tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#data-grid th {
+    background-color: #134457;
+    color: #fff;
+}
+
+#data-grid td {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Make the data grid responsive */
+@media (max-width: 768px) {
+    #data-grid thead {
+        display: none;
+    }
+    #data-grid, #data-grid tbody, #data-grid tr, #data-grid td {
+        display: block;
+        width: 100%;
+    }
+    #data-grid tr {
+        margin-bottom: 20px;
+    }
+    #data-grid td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    #data-grid td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
 }
 
 /* Footer Section */

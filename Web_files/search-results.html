@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Share2Teach</title>
+    <link rel="stylesheet" href="CSS/SearchResults.css">
+    <script>
+        // Function to handle API call and populate results container
+        function fetchSearchResults() {
+            // Placeholder for your API call
+            // You would use fetch() or an AJAX call here to retrieve data from your API
+            // Example:
+            // fetch('API_URL').then(response => response.json()).then(data => {
+            //     populateResults(data);
+            // });
+        }
+
+        // Function to populate the results container with data
+        function populateResults(data) {
+            const resultsContainer = document.getElementById('results-container');
+            // Clear previous results
+            resultsContainer.innerHTML = '';
+
+            // Loop through the data to create result elements dynamically
+            data.forEach(result => {
+                const resultDiv = document.createElement('div');
+                resultDiv.classList.add('result-card');
+                resultDiv.innerHTML = `
+                    <h3>${result.title}</h3>
+                    <p>${result.description}</p>
+                    <a href="${result.link}" class="result-link">View Resource</a>
+                `;
+                resultsContainer.appendChild(resultDiv);
+            });
+        }
+
+        // On window load, trigger the API call
+        window.onload = fetchSearchResults;
+    </script>
 </head>
 <body>
 
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Search.html">Search</a></li>
+                <li><a href="SelfDirectedLearning.html">Self-Directed Learning</a></li>
+                <li><a href="subjectview.html">Subjects</a></li>
+                <li><a href="useful_oer.html">Useful OER</a></li>
+                <li><a href="Contributors.html">Contributors</a></li>
+                <li><a href="Contribute.html">Contribute</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="Analytics.html">Analytics</a></li>
+                <li><a href="Moderate.html">Moderate</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Results Section -->
+    <main>
+        <section class="results-section">
+            <h1>Search Results</h1>
+            <div id="results-container" class="results-container">
+                <!-- Results from API will populate here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Share2Teach. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="about_us.html" class="footer-button">About Us</a></li>
+                <li><a href="Home.html" class="footer-button">Back to Home</a></li>
+                <li><a href="account.html" class="footer-button">Accounts</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

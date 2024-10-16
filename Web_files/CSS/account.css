@@ -124,6 +124,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: auto;
+    width: 100%;
 }
 
 footer nav ul {
@@ -131,18 +132,32 @@ footer nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 footer nav ul li {
     margin: 0 10px;
 }
 
-footer nav ul li a {
-    text-decoration: none;
+.footer-button {
+    display: inline-block;
+    padding: 10px 20px;
     color: #fff;
-    transition: color 0.3s;
+    background-color: #134457;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1em;
 }
 
-footer nav ul li a:hover {
-    color: #b0e0e6;
+.footer-button:hover {
+    color: #fff;
+    background-color: #4682b4;
+    box-shadow: 0 0 20px rgba(70, 130, 180, 0.7), 0 0 30px rgba(70, 130, 180, 0.5);
+}
+
+.footer-button:focus {
+    outline: none;
+    box-shadow: 0 0 25px rgba(70, 130, 180, 0.8), 0 0 35px rgba(70, 130, 180, 0.6);
 }
