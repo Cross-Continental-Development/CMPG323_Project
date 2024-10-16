@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CCD_SHARE2TEACH")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc05e53513972fea409963a1e3c1e7b91e5e2f32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7a0e905c75a6183b1276bcf67b838fc9d35b725")]
 [assembly: System.Reflection.AssemblyProductAttribute("CCD_SHARE2TEACH")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CCD_SHARE2TEACH")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
